@@ -1,0 +1,23 @@
+{
+  "name": "nintendoswitchinventory",
+  "version": "1.0.0",
+  "description": "Get inventory of Nintendo Switch in local Bestbuy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinhuynh23/NintendoSwitchInventory.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevinhuynh23/NintendoSwitchInventory/issues"
+  },
+  "homepage": "https://github.com/kevinhuynh23/NintendoSwitchInventory#readme",
+  "dependencies": {
+    "aws-sdk": "^2.658.0",
+    "bestbuy": "^2.3.1"
+  }
+}
