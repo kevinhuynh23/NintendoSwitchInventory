@@ -19,7 +19,7 @@ const ac = "Animal Crossing"
 
 //AWS SES Emails
 const sourceEmailAddr = "email@gmail.com";
-const destinationEmailAddrs = ["email0@gmail.com", "email1@gmail.edu", "email2@gmail.com"];
+const destinationEmailAddrs = ["email0@gmail.com", "email@gmail.edu", "email@gmail.com"];
 
 function checkSwitch(sku, url, name){
     let zipcode = 98056
@@ -37,7 +37,7 @@ function checkSwitch(sku, url, name){
                         Body: {
                             Text: { Data: url }
                         },
-                        Subject: { Data: version + " Nintendo Switch is available!" }
+                        Subject: { Data: name + " Nintendo Switch is available!" }
                     },
                     Source: sourceEmailAddr
                 };
@@ -49,7 +49,6 @@ function checkSwitch(sku, url, name){
                     }
                 });
                 console.log(url)
-                console.log(name + " Nintendo Switch availability in the " + zipcode + " area:" + JSON.stringify(data.stores))
             } else {
                 console.log(name + " Nintendo Switch is not available in the " + zipcode + " area.")
             }
