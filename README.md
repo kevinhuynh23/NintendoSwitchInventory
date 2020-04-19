@@ -1,4 +1,6 @@
-# NintendoSwitchInventory
+# Nintendo Switch Inventory
+
+This project uses the Bestbuy API to check the inventory status of the Nintendo Switch in an area based on zipcode. In general, this works with any Bestbuy product and you can adapt this by changing the product SKU in the index.js file.
 
 ## Dependency
 
@@ -12,7 +14,7 @@
 
 1. Clone the repository and cd into project
 
-2. Set an environment variable of BBY_API_KEY to your key
+2. Set an environment variable of **BBY_API_KEY** to your key
 
 3. Install node packages
 
@@ -37,3 +39,5 @@
     ```
 
 ## Important Notes
+
+AWS SES has a sending limit of **200** emails per day. Keep this in mind and only use for low inventory items.
