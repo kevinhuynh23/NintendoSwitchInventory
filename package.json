@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/kevinhuynh23/NintendoSwitchInventory#readme",
   "dependencies": {
-    "aws-sdk": "^2.658.0",
+    "aws-sdk": "^2.814.0",
     "bestbuy": "^2.3.1"
   }
 }
